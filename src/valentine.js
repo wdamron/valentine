@@ -78,7 +78,7 @@
       } :
       function (a, el, start) {
         start = start || 0
-        for (var i = 0; i < a.length; i++) {
+        for (var i = start; i < a.length; i++) {
           if (i in a && a[i] === el) return i
         }
         return -1
